@@ -6,7 +6,7 @@
 
   <div>
     <strong>Department:</strong>
-    <%= course.department.name  %>
-  </div>
+    <%= link_to(course.department.name, department_path(course.department))%>
+  </div
 
 </div>

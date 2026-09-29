@@ -2,13 +2,12 @@
 
 <%= render @department %>
 
+<h3>Courses</h3>
 <ul>
-  <% @Department.courses.each do |courses| %>
-
-  <li><%= course.name %> </li>
+  <% @department.courses.each do |course| %>
+    <li><%= link_to course.name, course %></li>
   <% end %>
 </ul>
-
 
 <div>
   <%= link_to "Edit this department", edit_department_path(@department) %> |
